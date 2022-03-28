@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import useSWRImmutable from 'swr/immutable';
 import { fetcher } from '../utils';
-import { RateTable } from './Table';
+import { RateTable } from './RateTable';
 import Select from 'react-select';
-import { IrCurrencies, IrRate } from '../response/IrRate';
+import { IrCurrencies, IrRate } from '../interface';
 import { ILabelValue } from '../interface';
 import { noOfMilliSecondsInDay } from '../constants';
 import { CurrencyLabel } from './CurrencyLabel';

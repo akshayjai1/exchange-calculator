@@ -1,8 +1,9 @@
 import useSWRImmutable from 'swr/immutable';
 import { noOfMilliSecondsInDay } from '../constants';
-import { IrRate } from '../response/IrRate';
+import { IrRate } from '../interface';
 import { fetcher } from '../utils';
-interface IpSimpleTable {}
+interface IpSimpleTable { }
+/* this component is currently not being used */
 export const SimpleTable = ({}: IpSimpleTable) => {
   const { error, data } = useSWRImmutable<IrRate>('latest/' + 'INR', fetcher, {
     refreshInterval: noOfMilliSecondsInDay,

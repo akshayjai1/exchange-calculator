@@ -1,7 +1,7 @@
 import MaterialTable from 'material-table';
 import CurrencyFlag from 'react-currency-flags';
 import { ILabelValue } from '../interface';
-import { IrCurrencies, IrRate } from '../response/IrRate';
+import { IrRate } from '../interface';
 import { useCodes } from './useCodes';
 
 interface IpRateTable {

@@ -1,5 +1,5 @@
 import { noOfMilliSecondsInDay } from '../constants';
-import { IrCurrencies } from '../response/IrRate';
+import { IrCurrencies } from '../interface';
 import { fetcher } from '../utils';
 import useSWRImmutable from 'swr/immutable';
 import { useMemo } from 'react';

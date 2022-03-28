@@ -1,6 +1,7 @@
 import { Route, NavLink, Routes } from 'react-router-dom';
 import { About } from './About';
 import './App.scss';
+import { Assignment } from './component/Assignment';
 import { ExchangeCenter } from './component/Rates';
 
 export function App() {
@@ -19,6 +20,7 @@ export function App() {
       <div className="app-body">
         <Routes>
           <Route path="/about" element={<About />} />
+          <Route path="/assign" element={<Assignment />} />
           <Route path="/" element={<ExchangeCenter />} />
         </Routes>
       </div>
